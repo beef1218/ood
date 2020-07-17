@@ -5,7 +5,7 @@ import java.util.List;
 
 public class FileSystem {
 	public static void main(String[] args) {
-		Node root = new Dir();
+		Node root = new Dir("ROOT", null);
 		FileSystem system = new FileSystem(root);
 		Filter sizeFilter = new SizeFilter(1000);
 		Filter datatypeFilter = new DatatypeFilter("xml");
